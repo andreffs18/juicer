@@ -1,7 +1,5 @@
 # juicer
 
-
-
 Service to extract clean corpus from given website.
 
 ## Table of contents
@@ -15,11 +13,10 @@ Service to extract clean corpus from given website.
 
 
 ## Installation
-This project uses [**Pipenv**](https://pipenv.readthedocs.io/en/latest/) to install and manage all it's package dependencies. 
-To setup it, just do the following:
-```shell
-
-# Clone repor to your local directory
+This project uses [**Pipenv**](https://pipenv.readthedocs.io/en/latest/) to install and manage all it's dependencies. 
+To setup locally, just do the following:
+```bash
+# Clone repo to your local directory
 $ git clone git@github.com:andreffs18/juicer.git .
 Cloning into 'juicer'...
 (...)
@@ -29,7 +26,6 @@ $ pipenv install
 Using /usr/local/bin/python3.6m (3.6.5) to create virtualenv…
 (...)
 
-
 # Activate virtual environment
 $ pipenv shell
 (juicer-kMLf9zVL) $ 
@@ -38,13 +34,13 @@ $ pipenv shell
 
 ## Usage
 
-To run this you just need to enter the following command:
+To run this service just enter the following command:
 
-```shell
+```bash
 (juicer-kMLf9zVL) $ scrapy crawl website -a start_url="https://www.example.com/" -o dump.json
 ```
 
-This initialize a **scrapy** spider called **"website"** which will crawl all pages from **"start_url"** and output all cleaned text into **"dump.json"** file.  
+This initializes a **scrapy spider** called **"website"** which will crawl all pages from **"start_url"** and output all cleaned text into **"dump.json"** file.  
 
 ## Contributing
 
@@ -53,12 +49,12 @@ We appreciate your contributions to this project. To do so, please follow [these
 
 ## Credits
 
-This project could not have been done without **[Scrapy](https://scrapy.org/)**, the most used scraping tool on the python ecosystem. :thumbsup:
+This project could not have been done without **[Scrapy](https://scrapy.org/)**. A great tool and one of the most used in the python ecosystem. :thumbsup:
 
 
 ## License
 
-[MIT License Copyright (c)](/LICENCE.md) 2018 andreffs18
+[MIT License Copyright (c)](/LICENSE.md) 2018 andreffs18
 
 
 ## Wiki and FAQ's
