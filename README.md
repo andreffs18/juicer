@@ -1,20 +1,22 @@
 # juicer
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/73c6a17abab646f1af045cb96e4476b6)](https://www.codacy.com/app/andreffs18/juicer?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=andreffs18/juicer&amp;utm_campaign=Badge_Grade)
+
 Service to extract clean corpus from given website.
 
 ## Table of contents
 
-* [Installation](#installation)
-* [Usage](#usage)
-* [Contributing](#contributing)
-* [Credits](#credits)
-* [License](#license)
-* [Wiki and FAQ's](#wiki-and-faqs)
-
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributing](#contributing)
+  * [Credits](#credits)
+  * [License](#license)
+  * [Wiki and FAQ's](#wiki-and-faqs)
 
 ## Installation
 This project uses [**Pipenv**](https://pipenv.readthedocs.io/en/latest/) to install and manage all it's dependencies. 
 To setup locally, just do the following:
+
 ```bash
 # Clone repo to your local directory
 $ git clone git@github.com:andreffs18/juicer.git .
@@ -31,38 +33,32 @@ $ pipenv shell
 (juicer-kMLf9zVL) $ 
 ```
 
-
 ## Usage
 
 To run this service just enter the following command:
 
 ```bash
-(juicer-kMLf9zVL) $ scrapy crawl website -a start_url="https://www.example.com/" -d 2 -o dump.json
+(juicer-kMLf9zVL) $ scrapy crawl website -a start_url="https://www.example.com/" --depth 2 -o dump.json
 ```
 
 This initializes a **scrapy spider** called **"website"** which will crawl all pages from **"start_url"** and output all cleaned text into **"dump.json"** file.
-The **"-d"** specifies the maximum depth on the sitemap you want to crawl. The default value if set to **2** on the **juicer/settings.pyL:25**.
+> The **"--depth"** specifies the maximum depth on the sitemap you want to crawl. The default value if set to **2** on the **juicer/settings.pyL:25**.
 
 ## Contributing
 
 We appreciate your contributions to this project. To do so, please follow [these](CONTRIBUTING.md) guidelines.
 
-
 ## Credits
 
 This project could not have been done without **[Scrapy](https://scrapy.org/)**. A great tool and one of the most used in the python ecosystem. :thumbsup:
-
 
 ## License
 
 [MIT License Copyright (c)](/LICENSE.md) 2018 andreffs18
 
-
 ## Wiki and FAQ's
 
 We try to keep our wiki up-to-date as best as we can, so if you have any questions, please use it! 
 If you don't find anything regarding what you are looking for or if you have any suggestions, then create an issue and we will look at it as soon as possible. :+1:
-
-
 
 Fork, clone, share! 

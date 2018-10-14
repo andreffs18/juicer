@@ -7,7 +7,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 * Initial working version
 
-
 <!--
 ### Added for new features.
 ### Changed for changes in existing functionality.
