@@ -6,12 +6,12 @@ Service to extract clean corpus from given website.
 
 ## Table of contents
 
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [Contributing](#contributing)
-  * [Credits](#credits)
-  * [License](#license)
-  * [Wiki and FAQ's](#wiki-and-faqs)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [Credits](#credits)
+* [License](#license)
+* [Wiki and FAQ's](#wiki-and-faqs)
 
 ## Installation
 This project uses [**Pipenv**](https://pipenv.readthedocs.io/en/latest/) to install and manage all it's dependencies. 
