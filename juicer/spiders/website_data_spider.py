@@ -4,7 +4,7 @@ from juicer.services.get_html_content_service import GetContentFromHtmlService
 
 
 class WebsiteDataSpider(scrapy.Spider):
-    name = "spider"
+    name = "website"
 
     def __init__(self, start_url=None, *args, **kwargs):
         super(WebsiteDataSpider, self).__init__(*args, **kwargs)
@@ -13,6 +13,7 @@ class WebsiteDataSpider(scrapy.Spider):
 
         self.start_urls = [start_url]
         self.allowed_domains = [urlparse(start_url).netloc.replace("www.", "")]
+        import pdb; pdb.set_trace()
 
     def parse(self, response):
         yield {'body': GetContentFromHtmlService(response.body).call()}
