@@ -37,10 +37,11 @@ $ pipenv shell
 To run this service just enter the following command:
 
 ```bash
-(juicer-kMLf9zVL) $ scrapy crawl website -a start_url="https://www.example.com/" -o dump.json
+(juicer-kMLf9zVL) $ scrapy crawl website -a start_url="https://www.example.com/" -d 2 -o dump.json
 ```
 
-This initializes a **scrapy spider** called **"website"** which will crawl all pages from **"start_url"** and output all cleaned text into **"dump.json"** file.  
+This initializes a **scrapy spider** called **"website"** which will crawl all pages from **"start_url"** and output all cleaned text into **"dump.json"** file.
+The **"-d"** specifies the maximum depth on the sitemap you want to crawl. The default value if set to **2** on the **juicer/settings.pyL:25**.
 
 ## Contributing
 
